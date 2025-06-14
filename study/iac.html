@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 로고(logo) -->
+    <link rel="stylesheet" href="/css/study.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mouse+Memoirs&display=swap" rel="stylesheet">
+    <!-- 메뉴(menu) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Special+Gothic+Condensed+One&display=swap" rel="stylesheet">
+    <title>IaC</title>
+</head>
+<body>
+<!-- 상단(로고 및 메뉴) -->
+<nav class="all">
+    <div class="menu">  
+        <a class="mouse-memoirs-regular" id="logo" href="/index.html">
+            <img src="/img/logo.png" height="100px">
+        </a>
+        <ul class="text">
+            <li>
+                <a href="/index.html" class="special-gothic-condensed-one-regular">Home</a>
+            </li>
+            <li>
+                <a href="#" class="special-gothic-condensed-one-regular">Team</a>
+                <ul class="submenu">
+                    <li><a href="/team/team.html" class="special-gothic-condensed-one-regular-2">Insite Out</a></li>
+                    <li><a href="/team/kkaturi.html" class="special-gothic-condensed-one-regular-2">곽민경</a></li>
+                    <li><a href="/team/pandyo.html" class="special-gothic-condensed-one-regular-2">박혜수</a></li>
+                    <li><a href="/team/jejusone.html" class="special-gothic-condensed-one-regular-2">윤주원</a></li>
+                    <li><a href="/team/hyeok.html" class="special-gothic-condensed-one-regular-2">윤주혁</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" class="special-gothic-condensed-one-regular">Study</a>
+                <ul class="submenu">
+                    <li><a href="/study/devops.html" class="special-gothic-condensed-one-regular-2">DevOps</a></li>
+                    <li><a href="/study/iac.html" class="special-gothic-condensed-one-regular-2">IaC</a></li>
+                    <li><a href="/study/aws.html" class="special-gothic-condensed-one-regular-2">AWS</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" class="special-gothic-condensed-one-regular">Quiz Game</a>
+                <ul class="submenu">
+                    <li><a href="/quiz-game/word-quiz.html" class="special-gothic-condensed-one-regular-2">Word Quiz</a></li>
+                    <li><a href="/quiz-game/command-quiz.html" class="special-gothic-condensed-one-regular-2">Command Quiz</a></li>
+                    <li><a href="/quiz-game/image-quiz.html" class="special-gothic-condensed-one-regular-2">Image Quiz</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" class="special-gothic-condensed-one-regular">DevOps Story</a>
+                <ul class="submenu">
+                    <li><a href="/devops-story/plan.html" class="special-gothic-condensed-one-regular-2">Plan</a></li>
+                    <li><a href="/devops-story/code.html" class="special-gothic-condensed-one-regular-2">Code</a></li>
+                    <li><a href="/devops-story/build.html" class="special-gothic-condensed-one-regular-2">Build</a></li>
+                    <li><a href="/devops-story/test.html" class="special-gothic-condensed-one-regular-2">Test</a></li>
+                    <li><a href="/devops-story/release.html" class="special-gothic-condensed-one-regular-2">Release</a></li>
+                    <li><a href="/devops-story/deploy.html" class="special-gothic-condensed-one-regular-2">Deploy</a></li>
+                    <li><a href="/devops-story/operate.html" class="special-gothic-condensed-one-regular-2">Operate</a></li>
+                    <li><a href="/devops-story/monitor.html" class="special-gothic-condensed-one-regular-2">Monitor</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" class="special-gothic-condensed-one-regular">Word Dictionary</a>
+                <ul class="submenu">
+                    <li><a href="/word-dictionary/word-dictionary.html" class="special-gothic-condensed-one-regular-2">Word dictionary</a></li>
+                </ul>
+            </li>
+        </ul>  
+    </div>
+</nav>
+<!-- 본문(제목 및 설명) -->
+<section class="study_main">
+    <div class="character-display" id="characterDisplay">
+        <a href="/index.html" id="link-btn" class="link-btn">다시 선택하기</a>
+    </div>
+    <button id="sidebar-toggle" aria-label="Toggle menu">
+        <span id="sidebar-arrow">
+            <svg width="36" height="36" viewBox="0 0 36 36">
+                <polyline points="12,8 24,18 12,28" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </span>
+    </button>
+    <nav id="sidebar">
+        <ul>
+            <li><a href="#1">IaC (Infrastructure as Code) 란?</a></li>
+            <li><a href="#2">선언형 & 명령형</a></li>
+            <li><a href="#3">DevOps에 IaC가 필요한 이유</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>IaC</h1>
+        <section id="1">
+            <h2>IaC (Infrastructure as Code) 란?</h2>
+            <p>Infrastructure as Code의 약자로, 인프라를 코드로 관리하는 것이다.</p>
+            <p>동일한 인프라 재사용에 용이하며, 수작업이 없어 빠른 자동화가 가능하다.</p>
+            <img src="/img/iac.png" class="life_cycle">
+        </section>
+        <br>
+        <br>
+        <br>
+        <section id="2">
+            <h2>선언형 & 명령형</h2>
+            <p>IaC 도구는 접근 방식에 따라 선언형과 명령형이 존재한다.</p>
+            <ul>
+                <li>선언형 : 구성하려는 최종 리소스와 설정을 선언해서 생성, 수정, 삭제</li>
+                <li>명령형 : CLI를 통한 작업으로서 옵션에 따라 원하는 대로 생성, 수정 삭제</li>
+            </ul>
+            <p>선언형과 명령어 IaC 도구의 예시는 다음과 같다.</p>
+            <div class="CICD">
+                <div class="CI">
+                    <h3>AWS CDK (선언형)</h3>
+                    <p>Cloud Development Kit의 약자로, 프로그래밍 언어들을 통한 정의로 IaC를 더 쉽고 효과적으로 할 수 있도록 도와주는 툴</p>
+                </div>
+                <div class="CD">
+                    <h3>AWS CLI (명령형)</h3>
+                    <p>명령어를 입력해 AWS 리소스를 직접 조작하는 명령형 도구</p>
+                    <br>
+                </div>
+            </div>
+            <div class="CICD">
+                <div class="CI">
+                    <h3>Terraform (선언형)</h3>
+                    <p>HCL(HashiCorp Configuration Language)이라는 선언형 문법을 통해 인프라를 프로비저닝하는 언어</p>
+                </div>
+                <div class="CD">
+                    <h3>Ansible(명령형)</h3>
+                    <p>여러 서버에 원하는 작업을 순서대로 실행(명령)하는 자동화 도구</p>
+                    <br>
+                </div>
+            </div>
+            <p>선언형 언어를 사용하는 경우가 많은데, 이는 명령형 언어의 경우 현재의 상황을 반영하지 않는다는 단점이 존재하기 때문이다.</p>
+        </section>
+        <br>
+        <br>
+        <br>
+        <section id="3">
+            <h2>DevOps에 IaC가 필요한 이유</h2>
+            <img src="/img/devops_iac.png" class="life_cycle">
+            <ul>
+                <li>일관성과 자동화 : 코드로서 동일한 환경을 재현 가능하고 일관되게 보장</li>
+                <li>신속성 : 개발환경부터 프로덕션까지 동일한 형태로 빠르게 프로비저닝</li>
+                <li>효율성과 확장성 : 코드로 관리되기 때문에 여러 번 고칠 필요가 없고, 쉽게 확장 가능</li>
+                <li>투명성 : Git 등의 환경에서 코드를 공유하고 변경하기 때문에 변경사항을 투명하게 검토할 수 있게 되어 히스토리 파악에 용이</li>
+            </ul>
+        </section>
+        <br>
+        <br>
+        <br>
+    </main>
+</section>
+<script src="/js/main.js"></script>
+</body>
+</html>

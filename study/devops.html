@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 로고(logo) -->
+    <link rel="stylesheet" href="/css/study.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mouse+Memoirs&display=swap" rel="stylesheet">
+    <!-- 메뉴(menu) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Special+Gothic+Condensed+One&display=swap" rel="stylesheet">
+    <title>DevOps</title>
+</head>
+<body>
+<!-- 상단(로고 및 메뉴) -->
+<nav class="all">
+    <div class="menu">  
+        <a class="mouse-memoirs-regular" id="logo" href="/index.html">
+            <img src="/img/logo.png" height="100px">
+        </a>
+        <ul class="text">
+            <li>
+                <a href="/index.html" class="special-gothic-condensed-one-regular">Home</a>
+            </li>
+            <li>
+                <a href="#" class="special-gothic-condensed-one-regular">Team</a>
+                <ul class="submenu">
+                    <li><a href="/team/team.html" class="special-gothic-condensed-one-regular-2">Insite Out</a></li>
+                    <li><a href="/team/kkaturi.html" class="special-gothic-condensed-one-regular-2">곽민경</a></li>
+                    <li><a href="/team/pandyo.html" class="special-gothic-condensed-one-regular-2">박혜수</a></li>
+                    <li><a href="/team/jejusone.html" class="special-gothic-condensed-one-regular-2">윤주원</a></li>
+                    <li><a href="/team/hyeok.html" class="special-gothic-condensed-one-regular-2">윤주혁</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" class="special-gothic-condensed-one-regular">Study</a>
+                <ul class="submenu">
+                    <li><a href="/study/devops.html" class="special-gothic-condensed-one-regular-2">DevOps</a></li>
+                    <li><a href="/study/iac.html" class="special-gothic-condensed-one-regular-2">IaC</a></li>
+                    <li><a href="/study/aws.html" class="special-gothic-condensed-one-regular-2">AWS</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" class="special-gothic-condensed-one-regular">Quiz Game</a>
+                <ul class="submenu">
+                    <li><a href="/quiz-game/word-quiz.html" class="special-gothic-condensed-one-regular-2">Word Quiz</a></li>
+                    <li><a href="/quiz-game/command-quiz.html" class="special-gothic-condensed-one-regular-2">Command Quiz</a></li>
+                    <li><a href="/quiz-game/image-quiz.html" class="special-gothic-condensed-one-regular-2">Image Quiz</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" class="special-gothic-condensed-one-regular">DevOps Story</a>
+                <ul class="submenu">
+                    <li><a href="/devops-story/plan.html" class="special-gothic-condensed-one-regular-2">Plan</a></li>
+                    <li><a href="/devops-story/code.html" class="special-gothic-condensed-one-regular-2">Code</a></li>
+                    <li><a href="/devops-story/build.html" class="special-gothic-condensed-one-regular-2">Build</a></li>
+                    <li><a href="/devops-story/test.html" class="special-gothic-condensed-one-regular-2">Test</a></li>
+                    <li><a href="/devops-story/release.html" class="special-gothic-condensed-one-regular-2">Release</a></li>
+                    <li><a href="/devops-story/deploy.html" class="special-gothic-condensed-one-regular-2">Deploy</a></li>
+                    <li><a href="/devops-story/operate.html" class="special-gothic-condensed-one-regular-2">Operate</a></li>
+                    <li><a href="/devops-story/monitor.html" class="special-gothic-condensed-one-regular-2">Monitor</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" class="special-gothic-condensed-one-regular">Word Dictionary</a>
+                <ul class="submenu">
+                    <li><a href="/word-dictionary/word-dictionary.html" class="special-gothic-condensed-one-regular-2">Word dictionary</a></li>
+                </ul>
+            </li>
+        </ul>  
+    </div>
+</nav>
+<!-- 본문(제목 및 설명) -->
+<section class="study_main">
+    <div class="character-display" id="characterDisplay">
+        <a href="/index.html" id="link-btn" class="link-btn">다시 선택하기</a>
+    </div>
+    <button id="sidebar-toggle" aria-label="Toggle menu">
+        <span id="sidebar-arrow">
+            <svg width="36" height="36" viewBox="0 0 36 36">
+                <polyline points="12,8 24,18 12,28" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </span>
+    </button>
+    <nav id="sidebar">
+        <ul>
+            <li><a href="#1">DevOps란?</a></li>
+            <li><a href="#2">DevOps 등장 배경</a></li>
+            <li><a href="#3">DevOps의 Life Cycle</a></li>
+            <li><a href="#4">DevOps의 CI/CD</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>DevOps</h1>
+        <section id="1">
+            <h2>DevOps란?</h2>
+            <p>DevOps란 개발과 운영의 합성어로 개발팀과 운영팀이 협업하여 개발부터 배포까지의 과정을 자동화하고, 사용자에게 빠르고 안전하게 서비스를 제공하는 프로세스, 방법, 문화 등을 의미</p>
+            <p>DevOps를 구현하는 것에 정답은 없으며,  DevOps를 목표로 자동화, 협업 등을 진행했다면 DevOps라 부를 수 있다.</p>
+            <img src="/img/devops.png" class="devops">
+        </section>
+        <br>
+        <br>
+        <br>
+        <section id="2">
+            <h2>DevOps 등장 배경</h2>
+            <p>기존에는 개발팀과 운영팀이 명확히 분리되어 개발팀이 개발을 진행한 후 운영팀에 보내면 운영팀 담당자가 수동으로 배포를 진행하였다.</p>
+            <div class="box">
+                <h4>이러한 방식의 단점은?</h4>
+                <p>1. 인적 의존도가 높기에 담당자의 사정에 따라 배포가 느려지거나 문제가 발생할 수 있다.</p>
+                <p>2. 수동적인 작업이기에 빠른 배포 주기로 운영되기 어렵다. 때문에 느린 배포 주기로 운영된다.</p>
+                <p>3. 개발팀과 운영팀의 역할이 명확히 분리되기 때문에 서로의 사정을 이해하기 어려우며 갈등이 발생할 확률이 높다.</p>
+            </div>
+            <div class="arrow-down">&#8595;</div>
+            <div class="box">
+                <h4>기존 방식의 단점은 DevOps를 통해 완화 가능하다.</h4>
+                <p>1. 인적 의존도 ⇒ 첫 설정만 사람이 해두면 개발부터 배포까지 모두 자동화가 되기 때문에 인적 의존도가 기존 방식에 비해 낮아질 수 있다.</p>
+                <p>2. 느린 배포 주기 ⇒ 자동화로 진행되기 때문에 정해진 주기를 지속적으로 반복하며 빠르게 배포가 가능하다.</p>
+                <p>3. 개발팀과 운영팀의 갈등 ⇒ 개발부터 배포까지의 과정이 하나의 프로세스로 진행되기 때문에 개발팀과 운영팀이 지속적으로 커뮤니케이션 및 협업이 가능하다.</p>
+            </div>
+            <p>DevOps는 2000년대 후반 IT 업계에 등장하였으며, 소프트웨어 개발과 운영의 분리로 인한 여러 문제를 해결하기 위해 애자일(Agile) 방법론과 함께 발전하였다.</p>
+            <p>애자일(Agile) 방법론이란, 본래 소프트웨어 개발 방법론 중 하나로 서비스 기능 테스트-릴리즈-피드백-기능 추가 및 개선사항 반영 과 같은 짧은 주기를 빠르게 반복하는 방식이다.</p>
+            <p>이러한 애자일(Agile) 방법론의 빠른 피드백과 유연한 개발 프로세스 강조를 바탕으로 DevOps가 등장하게 된다.</p>
+        </section>
+        <br>
+        <br>
+        <br>
+        <section id="3">
+            <h2>DevOps의 Life Cycle</h2>
+            <img src="/img/life_cycle.png" class="life_cycle">
+            <p>DevOps Lifecycle은 구현하고자 하는 DevOps에 따라 달라진다. 이 또한 정답은 없지만 아래와 같은 단계들이 대표적으로 포함된다.</p>
+            <ul>
+                <li>Plan : 계획하는 단계</li>
+                <li>Code : 계획한 내용을 토대로 개발하는 단계</li>
+                <li>Build : 개발된 코드의 결과물(빌드 아티팩트)을 생성하는 단계</li>
+                <li>Test : 코드 또는 빌드 아티팩트에 문제점이 있는지 확인하고 점검하는 단계</li>
+                <li>Release : 테스트 완료 후 빌드 아티팩트 등을 배포하기 위한 상태로 준비하는 단계</li>
+                <li>Deploy : 실제 배포 환경에 배포를 진행하는 단계</li>
+                <li>Operate : 배포된 서비스를 운영하고 관리하는 단계</li>
+                <li>Monitor : 배포된 서비스에서 발생하는 모든 내용을 확인하는 단계</li>
+            </ul>
+        </section>
+        <br>
+        <br>
+        <br>
+        <section id="4">
+            <h2>DevOps의 CI/CD</h2>
+            <p>DevOps에서 중요한 키워드는 Continuou(지속적인)이다.</p>
+            <p>지속적으로 개발하고, 지속적으로 통합하고, 지속적으로 테스트하고, 지속적으로 배포하고, 지속적으로 피드백하고, 지속적으로 모니터링하고, 지속적으로 운영하는 과정을 반복하게 된다.</p>
+            <p>이러한 과정에서 지속적인 통합(CI)과 지속적인 배포(CD)는 중요하게 여겨진다.</p>
+            <p>⇒ 그 이유는? : 개발이 완료되면 지속적으로 통합하는 과정부터 통합된 결과물들이 지속적으로 배포되는 과정이 자동화되어 빠르고 안정적으로 진행되는 것을 통해 서비스의 가용성을 보장할 수 있기 때문이다.</p>
+            <p>때문에 CI와 CD를 CI/CD라고 칭하며 DevOps를 구현하는 데 많이 사용된다.</p>
+            <div class="CICD">
+                <div class="CI">
+                    <h3>지속적인 통합 (Continuous Integration)</h3>
+                    <p>Code 작성 후 commit ⇒ commit 된 코드로 build ⇒ build 결과물을 Test</p>
+                    <p>이를 통해 새로운 코드들이 지속적으로 통합되고, 코드의 품질이 향상될 수 있다.</p>
+                </div>
+                <div class="CD">
+                    <h3>지속적인 배포 (Continuous Deployment)</h3>
+                    <p>Test에서 문제가 없었다면 Deploy를 진행</p>
+                    <p>이 때 무중단 배포가 많이 사용되는데, 이러한 배포를 통해 서비스의 가용성이 올라간다.</p>
+                    <br>
+                </div>
+            </div>
+        </section>
+        <br>
+        <br>
+        <br>
+    </main>
+</section>
+<script src="/js/main.js"></script>
+</body>
+</html>

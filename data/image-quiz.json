@@ -1,0 +1,12 @@
+[
+  { "id": 1, "imageUrl": "/img/ec2.png",        "answer": "EC2" },
+  { "id": 2, "imageUrl": "/img/terraform.png", "answer": "Terraform" },
+  { "id": 3, "imageUrl": "/img/docker.png",    "answer": "Docker" },
+  { "id": 4, "imageUrl": "/img/kubernetes.png","answer": "Kubernetes" },
+  { "id": 5, "imageUrl": "/img/ansible.png",   "answer": "Ansible" },
+  { "id": 6, "imageUrl": "/img/jenkins.png",   "answer": "Jenkins" },
+  { "id": 7, "imageUrl": "/img/git.png",       "answer": "Git" },
+  { "id": 8, "imageUrl": "/img/s3.png",         "answer": "S3" },
+  { "id": 9, "imageUrl": "/img/lambda.png",     "answer": "Lambda" },
+  { "id": 10,"imageUrl": "/img/devops.png","answer": "Devops" }
+]

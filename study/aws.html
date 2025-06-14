@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 로고(logo) -->
+    <link rel="stylesheet" href="/css/study.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mouse+Memoirs&display=swap" rel="stylesheet">
+    <!-- 메뉴(menu) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Special+Gothic+Condensed+One&display=swap" rel="stylesheet">
+    <title>AWS</title>
+</head>
+<body>
+<!-- 상단(로고 및 메뉴) -->
+<nav class="all">
+    <div class="menu">  
+        <a class="mouse-memoirs-regular" id="logo" href="/index.html">
+            <img src="/img/logo.png" height="100px">
+        </a>
+        <ul class="text">
+            <li>
+                <a href="/index.html" class="special-gothic-condensed-one-regular">Home</a>
+            </li>
+            <li>
+                <a href="#" class="special-gothic-condensed-one-regular">Team</a>
+                <ul class="submenu">
+                    <li><a href="/team/team.html" class="special-gothic-condensed-one-regular-2">Insite Out</a></li>
+                    <li><a href="/team/kkaturi.html" class="special-gothic-condensed-one-regular-2">곽민경</a></li>
+                    <li><a href="/team/pandyo.html" class="special-gothic-condensed-one-regular-2">박혜수</a></li>
+                    <li><a href="/team/jejusone.html" class="special-gothic-condensed-one-regular-2">윤주원</a></li>
+                    <li><a href="/team/hyeok.html" class="special-gothic-condensed-one-regular-2">윤주혁</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" class="special-gothic-condensed-one-regular">Study</a>
+                <ul class="submenu">
+                    <li><a href="/study/devops.html" class="special-gothic-condensed-one-regular-2">DevOps</a></li>
+                    <li><a href="/study/iac.html" class="special-gothic-condensed-one-regular-2">IaC</a></li>
+                    <li><a href="/study/aws.html" class="special-gothic-condensed-one-regular-2">AWS</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" class="special-gothic-condensed-one-regular">Quiz Game</a>
+                <ul class="submenu">
+                    <li><a href="/quiz-game/word-quiz.html" class="special-gothic-condensed-one-regular-2">Word Quiz</a></li>
+                    <li><a href="/quiz-game/command-quiz.html" class="special-gothic-condensed-one-regular-2">Command Quiz</a></li>
+                    <li><a href="/quiz-game/image-quiz.html" class="special-gothic-condensed-one-regular-2">Image Quiz</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" class="special-gothic-condensed-one-regular">DevOps Story</a>
+                <ul class="submenu">
+                    <li><a href="/devops-story/plan.html" class="special-gothic-condensed-one-regular-2">Plan</a></li>
+                    <li><a href="/devops-story/code.html" class="special-gothic-condensed-one-regular-2">Code</a></li>
+                    <li><a href="/devops-story/build.html" class="special-gothic-condensed-one-regular-2">Build</a></li>
+                    <li><a href="/devops-story/test.html" class="special-gothic-condensed-one-regular-2">Test</a></li>
+                    <li><a href="/devops-story/release.html" class="special-gothic-condensed-one-regular-2">Release</a></li>
+                    <li><a href="/devops-story/deploy.html" class="special-gothic-condensed-one-regular-2">Deploy</a></li>
+                    <li><a href="/devops-story/operate.html" class="special-gothic-condensed-one-regular-2">Operate</a></li>
+                    <li><a href="/devops-story/monitor.html" class="special-gothic-condensed-one-regular-2">Monitor</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" class="special-gothic-condensed-one-regular">Word Dictionary</a>
+                <ul class="submenu">
+                    <li><a href="/word-dictionary/word-dictionary.html" class="special-gothic-condensed-one-regular-2">Word dictionary</a></li>
+                </ul>
+            </li>
+        </ul>  
+    </div>
+</nav>
+<!-- 본문(제목 및 설명) -->
+<section class="study_main">
+    <div class="character-display" id="characterDisplay">
+        <a href="/index.html" id="link-btn" class="link-btn">다시 선택하기</a>
+    </div>
+    <button id="sidebar-toggle" aria-label="Toggle menu">
+        <span id="sidebar-arrow">
+            <svg width="36" height="36" viewBox="0 0 36 36">
+                <polyline points="12,8 24,18 12,28" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </span>
+    </button>
+    <nav id="sidebar">
+        <ul>
+            <li><a href="#1">AWS란?</a></li>
+            <li><a href="#2">AWS 환경에서 DevOps 구축</a></li>
+            <li><a href="#3"></a></li>
+            <li><a href="#4"></a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>AWS</h1>
+        <section id="1">
+            <h2>AWS란?</h2>
+            <p>Amawon Web Service의 약자로 서버, 네트워크 등 인프라 전체를 빌려주는 서비스 (PaaS)</p>
+            <p>→ 다양한 서비스를 제공하고 있어서 AWS가 제공하는 서비스 만으로 필요한 기능을 대부분 구축 가능</p>
+            <br><br><br>
+            <img src="/img/aws.png" class="aws">
+        </section>
+        <br>
+        <br>
+        <br>
+        <section id="2">
+            <h2>AWS 환경에서 DevOps 구축</h2>
+            <div class="aws_devops">
+            <img id="diagram" src="/img/diagram1.png" alt="다이어그램" style="max-width:80%; border:1.5px solid #ccc; border-radius:12px;">
+                <div class="list">
+                    <p id="btn1" style="cursor:pointer;">1. DevOps CI/CD 파이프라인</p>
+                    <p id="btn2" style="cursor:pointer;">2. GitHub에서 Code가 Push되면 파이프라인이 트리거</p>
+                    <p id="btn3" style="cursor:pointer;">3. Docker 이미지 생성 및 SCA, SAST 분석 후 S3 버킷에 업로드</p>
+                    <p id="btn4" style="cursor:pointer;">4. 빌드된 Docker 이미지를 ECR 프라이빗 리포지토리에 저장</p>
+                    <p id="btn5" style="cursor:pointer;">5. 지정된 Cluster에 Task 정의를 통해 서비스를 Rolling Update 배포</p>
+                    <p id="btn6" style="cursor:pointer;">6. OWASP ZAP으로 ECS 서비스 스캔 후 S3 버킷에 업로드</p>
+                    <p id="btn7" style="cursor:pointer;">7. CloudWatch의 로그 및 메트릭 수집 내용을 Grafana로 시각화</p>
+                </div>
+            </div>
+        </section>
+        <br>
+        <br>
+        <br>
+    </main>
+</section>
+<script src="/js/main.js"></script>
+</body>
+</html>

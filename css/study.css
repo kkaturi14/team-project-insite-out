@@ -1,0 +1,525 @@
+/* ###################### 로고 및 메뉴 ###################### */
+
+body{
+    background-color: aliceblue;
+}
+
+.all{
+    background-color: rgb(3, 21, 65);
+}
+
+.mouse-memoirs-regular {
+    font-family: "Mouse Memoirs", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}  
+
+#logo {
+    display: flex;
+    margin-left: 50px;
+}
+
+.special-gothic-condensed-one-regular {
+    font-family: 'Freesentation-9Black';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2404@1.0/Freesentation-9Black.woff2') format('woff2');
+    font-weight: 900;
+    font-style: normal;
+    color: rgb(244, 254, 255);
+    text-decoration: none;
+    font-size: 25px; 
+}
+
+.special-gothic-condensed-one-regular-2 {
+    font-family: 'Freesentation-9Black';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2404@1.0/Freesentation-9Black.woff2') format('woff2');
+    font-weight: 900;
+    font-style: normal;
+    color: rgb(244, 254, 255);
+    text-decoration: none;
+    font-size: 20px; 
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.menu .text {
+    list-style: none;
+    display: flex;
+    margin-right: 50px;
+    padding: 0;
+}
+
+.menu .text li {
+    list-style:none;
+    position: relative;
+}
+
+.menu .text li a {
+    display: block;
+    padding: 0 30px;
+    background: rgb(3, 21, 65);
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+}
+
+.menu .text li .submenu {
+    display: block;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition:
+        max-height 0.6s cubic-bezier(0.4,0,0.2,1),
+        opacity 0.3s cubic-bezier(0.4,0,0.2,1);
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    background: rgb(3, 21, 65);
+    padding: 0;
+    text-align: center;
+}
+
+.menu .text li .submenu li {
+    margin: 0;
+}
+
+.menu .text li .submenu li a {
+    display: block;
+    padding: 10px 0;
+    color: #fff;
+    background: rgb(3, 21, 65);
+    font-size: 18px;
+    border-bottom: 1px solid rgb(3, 21, 65);
+    text-decoration:none;
+}
+
+.menu .text li .submenu li:last-child a {
+    border-bottom: none;
+}
+
+.menu .text li:hover .submenu {
+    max-height: 800px;
+    opacity: 1;
+}
+
+.menu .text li:hover a {
+    transform: scale(1.08) !important; 
+    color: rgb(251, 255, 202);
+}
+
+.menu .text .submenu li a:hover{
+    transform: scale(1.08);
+    color: rgb(255, 235, 133);
+}
+
+#check{
+    color: rgb(141, 227, 255);
+    text-decoration: underline;
+}
+
+/* 제목 및 본문 */
+
+h1{
+    font-size: 60px;
+    text-align: center;
+}
+
+main h2{
+    font-size: 30px;
+    text-align: center;
+}
+
+main h4{
+    font-size: 25px;
+    text-align: left;
+    margin-left: 30px;
+}
+
+.arrow-down {
+    font-size: 120px;     /* 화살표 크기 */
+    text-align: center;  /* 가운데 정렬 */
+    margin: -20px 0px -20px;
+    color: #0b223a;      /* 색상 (필요시 조절) */
+    line-height: 1;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+main p {
+    font-size: 19px;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 900px;
+    padding-left: 24px; 
+    padding-right: 24px;
+    box-sizing: border-box;
+}
+
+main ul {
+    font-size: 19px;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 900px;
+    padding-left: 50px; 
+    padding-right: 24px;
+    box-sizing: border-box;
+}
+
+main li{
+    padding-left: 10px; 
+    margin-top: 1%;
+}
+
+.study_main .life_cycle{
+    display: block;
+    justify-self:center;
+    width: 800px;
+    box-shadow: 0 2px 12px rgba(20,40,80,0.07);
+}
+
+.study_main .devops{
+    display: block;
+    justify-self:center;
+    width: 800px;
+}
+
+.study_main .aws{
+    display: block;
+    justify-self:center;
+    width: 400px;
+}
+
+.aws_devops{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px auto;
+    max-width: 1000px;
+}
+
+.aws_devops img{
+    width: 500px;
+}
+
+.aws_devops .list p:hover{
+    transform: scale(1.08);
+}
+
+main .box {
+    background: #f6fbff;
+    box-shadow: 0 2px 12px rgba(20,40,80,0.07);
+    padding: 20px;
+    margin: 30px auto;
+    text-align: left;
+    max-width: 800px; 
+    width: 90%;
+    box-sizing: border-box;
+}
+
+.CICD {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 900px;
+    margin: 50px auto 40px auto;
+    gap: 32px;
+}
+
+.CICD .CI, .CICD .CD {
+    background: #f6fbff;
+    box-shadow: 0 2px 12px rgba(20,40,80,0.07);
+    flex: 1 1 0;
+    min-width: 0;
+    padding: 28px 24px;
+    text-align: left;
+    font-size: 18px;
+}
+
+#sidebar-toggle {
+  position: fixed;
+  top: 45%;
+  left: 0px;
+  z-index: 2001;
+  background: #233b63;
+  border: 2.5px solid #233b63;
+  width: 30px;
+  height: 150px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#sidebar-toggle.open {
+  left: 270px;
+}
+
+#sidebar-arrow svg {
+  display: block;
+}
+
+#sidebar {
+  position: fixed;
+  top: 150px; left: -300px;
+  width: 260px; height: 70vh;
+  background: #233b63;
+  color: #fff;
+  padding: 24px 24px 0 0;
+  z-index: 2000;
+  overflow-y: auto;
+}
+
+#sidebar.open { left: 0; }
+#sidebar ul { list-style: none; padding: 0 0 0 20px; margin: 60px 0 0 0;}
+#sidebar ul li { margin: 22px 0; }
+#sidebar ul li a { color: #ffffff; font-size: 20px; text-decoration: none; padding: 8px 8px 8px 8px; display: block; transition: background 0.12s, color 0.12s; }
+#sidebar ul li a:hover, #sidebar ul li a:focus { background: #dbe7f7; color: #000000; }
+
+.complete-btn {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: #10b981;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.375rem;
+    z-index: 1200;
+}
+
+.complete-btn:hover {
+    background-color: #059669;
+}
+
+.character-display {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: white;
+  border-radius: 12px;
+  padding: 10px 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  width: 120px;
+  z-index: 1100;
+}
+
+.character-display img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.character-display p {
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin: 0;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.character-display .score {
+  font-size: 0.75rem;
+  color: #4b5563;
+  margin: 0;
+}
+
+.link-btn {
+    display: block;
+    background-color: #3b82f6;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.375rem;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 10px; /* 캐릭터창 아래 여백 */
+    font-size: 14px;
+}
+
+/* ###################### 반응형 웹 ###################### */
+
+/* 미디어 유형이 스크린이고, 최대 너비 600px의 경우 적용할 css */
+@media screen and (max-width: 600px) {
+    #logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto 24px auto;
+        width: 100%;
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .menu .text {
+        flex-direction: column;
+        align-items: center;
+        margin-right: 0;
+    }
+
+    .menu .text li {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu .text li a {
+        padding: 0 18px;
+        font-size: 18px;
+        text-align: center;
+        border-radius: 0;
+        width: 100%;
+    }
+
+    .menu .text li .submenu {
+        display: none;
+        position: static !important;
+        width: 100%; 
+        box-shadow: none;
+        text-align: center;
+        color: rgb(255, 235, 133);
+        opacity: 1 !important;
+        max-height: none !important;
+        transition: none !important;
+    }
+
+    .menu .text li:hover .submenu,
+    .menu .text li:focus-within .submenu {
+        color: rgb(255, 235, 133);
+        display: block; 
+    }
+
+    .menu .text li .submenu li a {
+        color: rgb(255, 235, 133);
+        font-size: 15px;
+        padding-left: 0;
+        width: 100%;
+        text-align: center;
+    }
+    main p,
+    main ul {
+        font-size: 16px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    main h2 {
+        font-size: 24px;
+    }
+    .study_main .life_cycle,
+    .study_main .aws,
+    .study_main .devops {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .aws_devops img {
+        width: 100%;
+        height: auto;
+    }
+
+    .aws_devops {
+        flex-direction: column;
+        padding: 0 16px;
+    }
+    #sidebar-toggle {
+        top: 120px;
+        width: 24px;
+        height: 100px;
+    }
+
+    #sidebar {
+        top: 120px;
+        width: 200px;
+        padding-right: 0;
+    }
+
+    #sidebar ul li a {
+        font-size: 16px;
+        padding: 6px;
+    }
+    .CICD {
+        flex-direction: column;
+        gap: 24px;
+        padding: 0 16px;
+    }
+
+    .CICD .CI,
+    .CICD .CD {
+        font-size: 16px;
+        padding: 20px;
+        width: 100%;
+        box-sizing: border-box;
+        margin: 0 auto;
+        border-radius: 8px;
+    }
+
+    main p,
+    main ul {
+        font-size: 16px;
+        line-height: 1.6;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    main h2 {
+        font-size: 22px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    h1 {
+        font-size: 32px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .study_main {
+        padding-bottom: 100px; /* 하단 스크롤 여유 */
+    }
+    .character-display {
+        bottom: 10px;
+        right: 10px;
+        width: 100px;
+        padding: 8px;
+    }
+
+    .character-display img {
+        width: 48px;
+        height: 48px;
+    }
+
+    .link-btn {
+        font-size: 11px;
+        padding: 3px 6px;
+    }
+    #sidebar,
+    #sidebar-toggle {
+        display: none !important;
+        visibility: hidden;
+    }
+}
+

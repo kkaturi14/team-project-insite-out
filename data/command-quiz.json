@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "command": "aws s3 ls",
+    "question": "이 명령어는 무엇을 조회하는가?",
+    "choices": ["S3 버킷 목록", "EC2 인스턴스", "IAM 사용자", "Lambda 함수"],
+    "correct": "S3 버킷 목록"
+  },
+  {
+    "id": 2,
+    "command": "aws ec2 describe-instances",
+    "question": "이 명령어가 제공하는 정보는?",
+    "choices": ["EC2 인스턴스 상세", "S3 객체 목록", "VPC 서브넷", "CloudWatch 지표"],
+    "correct": "EC2 인스턴스 상세"
+  },
+  {
+    "id": 3,
+    "command": "aws lambda invoke --function-name MyFunction output.txt",
+    "question": "이 명령어는 무엇을 수행하는가?",
+    "choices": ["람다 함수 호출 및 결과 저장", "람다 함수 배포", "IAM 역할 생성", "API Gateway 생성"],
+    "correct": "람다 함수 호출 및 결과 저장"
+  },
+  {
+    "id": 4,
+    "command": "terraform init",
+    "question": "이 명령어는 Terraform에서 어떤 작업을 하는가?",
+    "choices": ["모듈 및 플러그인 초기화", "리소스 적용", "상태 파일 삭제", "계획(Plan) 생성"],
+    "correct": "모듈 및 플러그인 초기화"
+  },
+  {
+    "id": 5,
+    "command": "terraform plan",
+    "question": "이 명령어가 생성하는 것은?",
+    "choices": ["적용 예정 변경 내역", "실제 리소스 배포", "구성 검증 보고서", "상태 파일 초기화"],
+    "correct": "적용 예정 변경 내역"
+  },
+  {
+    "id": 6,
+    "command": "terraform apply",
+    "question": "이 명령어는 Terraform에서 어떤 작업을 수행하는가?",
+    "choices": ["Plan에 따른 인프라 적용", "플랜 파일만 저장", "모듈 초기화", "백엔드 구성 변경"],
+    "correct": "Plan에 따른 인프라 적용"
+  },
+  {
+    "id": 7,
+    "command": "terraform apply -auto-approve",
+    "question": "이 옵션(`-auto-approve`)의 역할은?",
+    "choices": ["사용자 확인 없이 자동 적용", "오류 자동 무시", "계획만 저장", "모듈 업데이트"],
+    "correct": "사용자 확인 없이 자동 적용"
+  },
+  {
+    "id": 8,
+    "command": "terraform destroy",
+    "question": "이 명령어는 무엇을 하는가?",
+    "choices": ["모든 관리 리소스 파괴", "상태 파일 백업", "모듈 초기화", "플랜 파일 생성"],
+    "correct": "모든 관리 리소스 파괴"
+  },
+  {
+    "id": 9,
+    "command": "aws iam list-users",
+    "question": "이 명령어로 조회할 수 있는 항목은?",
+    "choices": ["IAM 사용자 목록", "IAM 그룹 상세", "EC2 인스턴스 상태", "S3 버킷 정책"],
+    "correct": "IAM 사용자 목록"
+  },
+  {
+    "id": 10,
+    "command": "aws rds describe-db-instances",
+    "question": "이 명령어가 반환하는 것은?",
+    "choices": ["RDS 인스턴스 정보", "DynamoDB 테이블 목록", "SNS 주제 목록", "CloudTrail 이벤트"],
+    "correct": "RDS 인스턴스 정보"
+  }
+]
