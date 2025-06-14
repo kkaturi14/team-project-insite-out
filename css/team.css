@@ -126,7 +126,7 @@ body{
 
 /* 제목 및 본문 */
 h1{
-    font-size: 40px;
+    font-size: 60px;
 }
 
 /* ###################### 반응형 웹 ###################### */
@@ -210,10 +210,7 @@ h1{
 
 .profile-heading {
     text-align: center;
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: rgb(3, 21, 65); /* 네비게이션 배경색과 조화 */
-    margin-bottom: 1.5rem;
+    font-size: 60px;
 }
 
 .profile-card {

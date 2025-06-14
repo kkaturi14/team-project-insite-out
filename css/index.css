@@ -126,7 +126,7 @@ body{
 
 /* 제목 및 본문 */
 h1{
-    font-size: 40px;
+    font-size: 60px;
 }
 
 .complete-btn {
@@ -266,9 +266,6 @@ h1{
 
 .heading {
     text-align: center;
-    font-size: 1.5rem;
-    font-weight: 700;
-    margin-bottom: 1rem;
 }
 
 .text-center {

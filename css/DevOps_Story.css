@@ -454,12 +454,6 @@ body {
 
 /* ###################### 캐릭터 및 슬라이더 스타일 ###################### */
 
-.heading {
-  text-align: center;
-  font-size: 1.5rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
-}
 
 .text-center {
   text-align: center;
@@ -816,4 +810,9 @@ body {
     font-size: 11px;
     padding: 3px 6px;
   }
+}
+
+.all-title{
+  font-size: 60px;
+  margin-top: -60px;
 }
